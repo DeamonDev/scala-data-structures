@@ -11,6 +11,12 @@ sealed abstract class RList[+T] {
     def length: Int 
     def reverse: RList[T]
     def ++[S >: T](anotherList: RList[S]): RList[S]
+    def removeAt(index: Int): RList[T]
+
+    // the big 3
+    def map[S](f: T => S): RList[S]
+    def flatMap[S](f: T => RList[S]): RList[S]
+    def filter(f: T => Boolean): RList[T]
 }
 
 case object RNil extends RList[Nothing] { 
@@ -27,6 +33,14 @@ case object RNil extends RList[Nothing] {
     override def reverse: RList[Nothing] = this
 
     override def ++[S >: Nothing](anotherList: RList[S]): RList[S] = anotherList
+
+    override def removeAt(index: Int): RList[Nothing] = throw new NoSuchElementException
+
+    override def map[S](f: Nothing => S): RList[S] = RNil
+
+    override def flatMap[S](f: Nothing => RList[S]): RList[S] = RNil
+
+    override def filter(f: Nothing => Boolean): RList[Nothing] = RNil
    
 }
 
@@ -88,6 +102,52 @@ case class ::[+T](override val head: T, override val tail: RList[T]) extends RLi
 
         tr(this.reverse, anotherList)
     }
+
+    override def removeAt(index: Int): RList[T] = {
+
+        @tailrec
+        def removeAt0(remainingList: RList[T], newList: RList[T], currentIndex: Int): RList[T] = { 
+            if (currentIndex == index) removeAt0(remainingList.tail, newList, currentIndex + 1)
+            else if (currentIndex == this.length - 1) remainingList.head :: newList
+            else removeAt0(remainingList.tail, remainingList.head :: newList, currentIndex + 1)
+        }
+
+        if (index < 0 || index >= this.length) throw new IndexOutOfBoundsException
+        else removeAt0(this, RNil, 0).reverse
+    }
+
+    override def map[S](f: T => S): RList[S] = { 
+
+        @tailrec       
+        def map0(remainingList: RList[T], newList: RList[S]): RList[S] = { 
+            if (remainingList.isEmpty) newList
+            else map0(remainingList.tail, f(remainingList.head) :: newList)
+        }
+
+        map0(this, RNil).reverse
+    }
+
+    override def flatMap[S](f: T => RList[S]): RList[S] = { 
+        @tailrec       
+        def flatMap0(remainingList: RList[T], newList: RList[S]): RList[S] = { 
+            if (remainingList.isEmpty) newList
+            else flatMap0(remainingList.tail, f(remainingList.head) ++ newList)
+        }
+
+        flatMap0(this, RNil).reverse
+    }
+
+    override def filter(f: T => Boolean): RList[T] = { 
+        
+        @tailrec
+        def filter0(remainingList: RList[T], newList: RList[T]): RList[T] = {
+            if (remainingList.isEmpty) newList
+            else if (!f(remainingList.head)) filter0(remainingList.tail, newList)
+            else filter0(remainingList.tail, remainingList.head :: newList)
+        }
+
+        filter0(this, RNil).reverse
+    }
 }
 
 object ListProblems extends App { 
@@ -98,4 +158,8 @@ object ListProblems extends App {
     println(RNil.length)
     //println(aSmallList.reverse)
     println(aSmallList ++ anotherSmallList)
+    println(aSmallList)
+    println(aSmallList.removeAt(1))
+    println(aSmallList.map(n => "a".repeat(n)))
+    println(aSmallList.filter(_ % 2 == 0))
 }
