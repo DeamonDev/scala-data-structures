@@ -17,11 +17,13 @@ sealed abstract class RList[+T] {
     def map[S](f: T => S): RList[S]
     def flatMap[S](f: T => RList[S]): RList[S]
     def filter(f: T => Boolean): RList[T]
+
+    def rle: RList[(T, Int)] 
 }
 
 case object RNil extends RList[Nothing] { 
     override def head: Nothing = throw new NoSuchElementException
-    override def tail: RList[Nothing] = throw new NoSuchElementException
+    override def tail: RList[Nothing] = RNil
     override def isEmpty: Boolean = true
 
     override def toString: String = "[]"
@@ -34,13 +36,15 @@ case object RNil extends RList[Nothing] {
 
     override def ++[S >: Nothing](anotherList: RList[S]): RList[S] = anotherList
 
-    override def removeAt(index: Int): RList[Nothing] = throw new NoSuchElementException
+    override def removeAt(index: Int): RList[Nothing] = RNil
 
     override def map[S](f: Nothing => S): RList[S] = RNil
 
     override def flatMap[S](f: Nothing => RList[S]): RList[S] = RNil
 
     override def filter(f: Nothing => Boolean): RList[Nothing] = RNil
+
+    override def rle: RList[(Nothing, Int)] = RNil
    
 }
 
@@ -107,8 +111,8 @@ case class ::[+T](override val head: T, override val tail: RList[T]) extends RLi
 
         @tailrec
         def removeAt0(remainingList: RList[T], newList: RList[T], currentIndex: Int): RList[T] = { 
-            if (currentIndex == index) removeAt0(remainingList.tail, newList, currentIndex + 1)
-            else if (currentIndex == this.length - 1) remainingList.head :: newList
+            if (currentIndex == this.length) newList
+            else if (currentIndex == index) removeAt0(remainingList.tail, newList,currentIndex + 1)
             else removeAt0(remainingList.tail, remainingList.head :: newList, currentIndex + 1)
         }
 
@@ -148,18 +152,37 @@ case class ::[+T](override val head: T, override val tail: RList[T]) extends RLi
 
         filter0(this, RNil).reverse
     }
+
+    override def rle: RList[(T, Int)] = { 
+        val len = this.length
+
+        def rle0(remainingList: RList[T], newList: RList[(T, Int)], currentIndex: Int): RList[(T, Int)] = {
+
+            if (currentIndex == len) return newList
+            else { // we are in the [0, len - 1] interval 
+                if (remainingList.head == newList.head._1)
+                    rle0(remainingList.tail, (remainingList.head, newList.head._2 + 1) :: newList.tail, currentIndex + 1)
+                else
+                    rle0(remainingList.tail, (remainingList.head, 1) :: newList, currentIndex + 1)
+            }
+        }
+        
+        rle0(this.tail, (this.head, 1) :: RNil, 1).reverse
+    }
 }
 
 object ListProblems extends App { 
     val aSmallList = 1 :: 2 :: 3 :: 4 :: 5 :: 17 :: RNil
+    val aConsList = 1 :: 1 :: 1 :: 1 :: 2 :: 2 :: 3 :: 4 :: 4 :: 4 :: 5 :: 5 :: 5 :: 10:: RNil
     val anotherSmallList = 18 :: 19 :: 20 :: RNil
-    println(aSmallList.length)
-    //println(aSmallList.apply(2))
-    println(RNil.length)
-    //println(aSmallList.reverse)
-    println(aSmallList ++ anotherSmallList)
-    println(aSmallList)
-    println(aSmallList.removeAt(1))
-    println(aSmallList.map(n => "a".repeat(n)))
-    println(aSmallList.filter(_ % 2 == 0))
+
+    // println(aSmallList ++ anotherSmallList)
+    // println(aSmallList)
+    // println(aSmallList.removeAt(1))
+    // println(aSmallList.map(n => "a".repeat(n)))
+    // println(aSmallList.filter(_ % 2 == 0))
+    // println(RNil.length)
+    //println((1 :: 2 :: RNil).removeAt(0))
+    //println((1 :: 2 :: RNil).removeAt(0))
+    println(aConsList.rle)
 }
