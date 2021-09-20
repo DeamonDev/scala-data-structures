@@ -19,6 +19,9 @@ sealed abstract class RList[+T] {
     def filter(f: T => Boolean): RList[T]
 
     def rle: RList[(T, Int)] 
+    def duplcateEach(k: Int): RList[T]
+    def rotate(k: Int): RList[T]
+
 }
 
 case object RNil extends RList[Nothing] { 
@@ -45,6 +48,10 @@ case object RNil extends RList[Nothing] {
     override def filter(f: Nothing => Boolean): RList[Nothing] = RNil
 
     override def rle: RList[(Nothing, Int)] = RNil
+
+    override def duplcateEach(k: Int): RList[Nothing] = RNil
+
+    override def rotate(k: Int): RList[Nothing] = RNil
    
 }
 
@@ -169,12 +176,31 @@ case class ::[+T](override val head: T, override val tail: RList[T]) extends RLi
         
         rle0(this.tail, (this.head, 1) :: RNil, 1).reverse
     }
+
+    override def duplcateEach(k: Int): RList[T] = {
+        val len = this.length
+
+        @tailrec
+        def duplcateEach0(remainingList: RList[T], newList: RList[T], outerIndex: Int, innerIndex: Int): RList[T] = { 
+            if (outerIndex == len - 1 && innerIndex == k) remainingList.head :: newList
+            else if (outerIndex != len - 1 && innerIndex == k) duplcateEach0(remainingList.tail, remainingList.head :: newList, outerIndex + 1, 1)
+            else duplcateEach0(remainingList, remainingList.head :: newList, outerIndex, innerIndex + 1)
+        }
+
+        duplcateEach0(this, RNil, 0, 1).reverse
+    }
+
+    override def rotate(k: Int): RList[T] = {
+        
+    }
+
 }
 
 object ListProblems extends App { 
     val aSmallList = 1 :: 2 :: 3 :: 4 :: 5 :: 17 :: RNil
     val aConsList = 1 :: 1 :: 1 :: 1 :: 2 :: 2 :: 3 :: 4 :: 4 :: 4 :: 5 :: 5 :: 5 :: 10:: RNil
     val anotherSmallList = 18 :: 19 :: 20 :: RNil
+    val simpleList = 1 :: 2 :: 3 :: RNil
 
     // println(aSmallList ++ anotherSmallList)
     // println(aSmallList)
@@ -184,5 +210,6 @@ object ListProblems extends App {
     // println(RNil.length)
     //println((1 :: 2 :: RNil).removeAt(0))
     //println((1 :: 2 :: RNil).removeAt(0))
-    println(aConsList.rle)
+    //println(aConsList.rle)
+    println(simpleList.duplcateEach(5))
 }

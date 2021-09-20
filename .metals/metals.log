@@ -23717,3 +23717,829 @@ Debugger JVM version: 11.0.10
 Debuggee JVM version: 11.0.12[0m
 [0m2021.09.17 22:03:13 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
 [0m2021.09.17 22:03:13 INFO  Closing debug server tcp://0.0.0.0:50121[0m
+[0m2021.09.17 22:10:47 INFO  compiling rockthejvm-interview-build (1 scala source)[0m
+Sep 17, 2021 10:10:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3050
+[0m2021.09.17 22:10:54 INFO  shutting down Metals[0m
+[0m2021.09.17 22:10:54 INFO No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+ No more data in the server stdin, exiting...Shut down connection with build server.
+[0m
+[0m2021.09.17 22:10:54 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+Sep 17, 2021 10:10:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at java.base/java.util.Arrays.sort(Arrays.java:1441)
+	at scala.tools.nsc.classpath.JFileDirectoryLookup.listChildren(DirectoryClassPath.scala:117)
+	at scala.tools.nsc.classpath.JFileDirectoryLookup.listChildren$(DirectoryClassPath.scala:101)
+	at scala.tools.nsc.classpath.DirectoryClassPath.listChildren(DirectoryClassPath.scala:292)
+	at scala.tools.nsc.classpath.DirectoryClassPath.listChildren(DirectoryClassPath.scala:292)
+	at scala.tools.nsc.classpath.DirectoryLookup.list(DirectoryClassPath.scala:82)
+	at scala.tools.nsc.classpath.DirectoryLookup.list$(DirectoryClassPath.scala:77)
+	at scala.tools.nsc.classpath.DirectoryClassPath.list(DirectoryClassPath.scala:292)
+	at scala.tools.nsc.classpath.AggregateClassPath.$anonfun$list$3(AggregateClassPath.scala:105)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.collection.IterableLike.foreach(IterableLike.scala:74)
+	at scala.collection.IterableLike.foreach$(IterableLike.scala:73)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:56)
+	at scala.tools.nsc.classpath.AggregateClassPath.list(AggregateClassPath.scala:101)
+	at scala.tools.nsc.util.ClassPath.list(ClassPath.scala:36)
+	at scala.tools.nsc.util.ClassPath.list$(ClassPath.scala:36)
+	at scala.tools.nsc.classpath.AggregateClassPath.list(AggregateClassPath.scala:30)
+	at scala.tools.nsc.symtab.SymbolLoaders$PackageLoader.doComplete(SymbolLoaders.scala:298)
+	at scala.tools.nsc.symtab.SymbolLoaders$SymbolLoader.complete(SymbolLoaders.scala:250)
+	at scala.reflect.internal.Symbols$Symbol.completeInfo(Symbols.scala:1542)
+	at scala.reflect.internal.Symbols$Symbol.info(Symbols.scala:1514)
+	at scala.reflect.internal.Types$TypeRef.decls(Types.scala:2283)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterPackage(Namers.scala:766)
+	at scala.tools.nsc.typechecker.Namers$Namer.dispatch$1(Namers.scala:289)
+	at scala.tools.nsc.typechecker.Namers$Namer.standardEnterSym(Namers.scala:302)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym(AnalyzerPlugins.scala:479)
+	at scala.tools.nsc.typechecker.AnalyzerPlugins.pluginsEnterSym$(AnalyzerPlugins.scala:478)
+	at scala.meta.internal.pc.MetalsGlobal$MetalsInteractiveAnalyzer.pluginsEnterSym(MetalsGlobal.scala:59)
+	at scala.tools.nsc.typechecker.Namers$Namer.enterSym(Namers.scala:280)
+	at scala.tools.nsc.typechecker.Analyzer$namerFactory$$anon$1.apply(Analyzer.scala:48)
+	at scala.tools.nsc.Global$GlobalPhase.applyPhase(Global.scala:453)
+	at scala.tools.nsc.Global$Run.$anonfun$compileLate$3(Global.scala:1650)
+	at scala.tools.nsc.Global$Run.$anonfun$compileLate$2(Global.scala:1650)
+	at scala.tools.nsc.Global$Run.$anonfun$compileLate$2$adapted(Global.scala:1649)
+	at scala.collection.Iterator.foreach(Iterator.scala:943)
+	at scala.collection.Iterator.foreach$(Iterator.scala:943)
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1431)
+	at scala.tools.nsc.Global$Run.compileLate(Global.scala:1649)
+	at scala.tools.nsc.interactive.Global.parseAndEnter(Global.scala:654)
+	at scala.tools.nsc.interactive.Global.typeCheck(Global.scala:664)
+	at scala.meta.internal.pc.SemanticdbTextDocumentProvider.textDocument(SemanticdbTextDocumentProvider.scala:32)
+
+[0m2021.09.17 22:10:54 ERROR text document: file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/build.sbt
+java.util.concurrent.CancellationException
+	at scala.meta.internal.pc.CompilerJobQueue.$anonfun$submit$2(CompilerJobQueue.scala:41)
+	at scala.runtime.java8.JFunction0$mcZ$sp.apply(JFunction0$mcZ$sp.java:23)
+	at scala.meta.internal.pc.CompilerJobQueue.onExecutor(CompilerJobQueue.scala:63)
+	at scala.meta.internal.pc.CompilerJobQueue.submit(CompilerJobQueue.scala:41)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue(CompilerAccess.scala:194)
+	at scala.meta.internal.pc.CompilerAccess.withInterruptableCompiler(CompilerAccess.scala:90)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.semanticdbTextDocument(ScalaPresentationCompiler.scala:211)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:188)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.util.HashMap.compute(HashMap.java:1228)
+	at java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:84)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:58)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1531)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1529)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+[0m2021.09.17 22:10:54 INFO  time: code lens generation in 7.17s[0m
+Exception in thread "pool-1-thread-131" java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1345)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:207)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:225)
+	at coursierapi.shaded.scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at coursierapi.shaded.scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at coursierapi.shaded.scala.concurrent.Await$.result(package.scala:124)
+	at coursierapi.shaded.coursier.Fetch$FetchTaskOps$.eitherResult$extension(Fetch.scala:311)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.doFetch(ApiHelper.scala:334)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper.doFetch(ApiHelper.scala)
+	at coursierapi.Fetch.fetchResult(Fetch.java:244)
+	at coursierapi.Fetch.fetch(Fetch.java:239)
+	at scala.meta.internal.metals.Embedded$.newPresentationCompilerClassLoader(Embedded.scala:271)
+	at scala.meta.internal.metals.Embedded.$anonfun$presentationCompiler$2(Embedded.scala:65)
+	at scala.meta.internal.metals.StatusBar.trackSlowTask(StatusBar.scala:58)
+	at scala.meta.internal.metals.Embedded.$anonfun$presentationCompiler$1(Embedded.scala:65)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:895)
+	at scala.meta.internal.metals.Embedded.presentationCompiler(Embedded.scala:64)
+	at scala.meta.internal.metals.Compilers.newCompiler(Compilers.scala:640)
+	at scala.meta.internal.metals.Compilers.newCompiler(Compilers.scala:621)
+	at scala.meta.internal.metals.Compilers.newCompiler(Compilers.scala:607)
+	at scala.meta.internal.metals.Compilers.$anonfun$loadCompilerForTarget$3(Compilers.scala:485)
+	at scala.meta.internal.metals.StatusBar.trackBlockingTask(StatusBar.scala:46)
+	at scala.meta.internal.metals.Compilers.$anonfun$loadCompilerForTarget$2(Compilers.scala:485)
+	at java.base/java.util.HashMap.computeIfAbsent(HashMap.java:1133)
+	at java.base/java.util.Collections$SynchronizedMap.computeIfAbsent(Collections.java:2682)
+	at scala.meta.internal.metals.Compilers.loadCompilerForTarget(Compilers.scala:481)
+	at scala.meta.internal.metals.Compilers.$anonfun$loadCompiler$2(Compilers.scala:467)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.Compilers.loadCompiler(Compilers.scala:467)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$compile$1(InteractiveSemanticdbs.scala:164)
+	at scala.Option.flatMap(Option.scala:271)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.fromTarget$1(InteractiveSemanticdbs.scala:163)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$compile$3(InteractiveSemanticdbs.scala:168)
+	at scala.Option.orElse(Option.scala:447)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:168)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.base/java.util.HashMap.compute(HashMap.java:1228)
+	at java.base/java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:84)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:58)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.decorations.SyntheticsDecorationProvider.currentDocument(SyntheticsDecorationProvider.scala:256)
+	at scala.meta.internal.decorations.SyntheticsDecorationProvider.publishSynthetics(SyntheticsDecorationProvider.scala:74)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$didOpen$6(MetalsLanguageServer.scala:1003)
+	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m2021.09.18 14:06:36 INFO  Started: Metals version 0.10.7 in workspace '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview' for client Visual Studio Code 1.60.1.[0m
+[0m2021.09.18 14:06:39 INFO  time: initialize in 3.31s[0m
+[0m2021.09.18 14:06:41 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher14160010541649423052/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.09.18 14:06:41 WARN  no build target for: /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala[0m
+[0m2021.09.18 14:06:42 INFO  skipping build import with status 'Installed'[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+[0m2021.09.18 14:06:46 INFO  shutting down Metals[0m
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.9...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop/root-test.json'
+[0m[32m[D][0m Loading project from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop/root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.6.
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.19.0/jline-3.19.0.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.6/scala-reflect-2.13.6.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root-test', 'root'
+[0m[32m[D][0m Loading previous analysis for 'root-test' from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Loading previous analysis for 'root' from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher14160010541649423052/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher14160010541649423052/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.09.18 14:06:54 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.09.18 14:06:55 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher557095918478472337/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher557095918478472337/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher557095918478472337/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.09.18 14:06:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.09.18 14:06:56 INFO  time: Connected to build server in 14s[0m
+[0m2021.09.18 14:06:56 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.09.18 14:06:57 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+Exception in thread "pool-1-thread-11" java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1040)
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1345)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:207)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:225)
+	at coursierapi.shaded.scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at coursierapi.shaded.scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at coursierapi.shaded.scala.concurrent.Await$.result(package.scala:124)
+	at coursierapi.shaded.coursier.Fetch$FetchTaskOps$.eitherResult$extension(Fetch.scala:311)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.doFetch(ApiHelper.scala:334)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper.doFetch(ApiHelper.scala)
+	at coursierapi.Fetch.fetchResult(Fetch.java:244)
+	at coursierapi.Fetch.fetch(Fetch.java:239)
+	at scala.meta.internal.metals.Embedded$.downloadDependency(Embedded.scala:219)
+	at scala.meta.internal.metals.Embedded$.downloadScalaSources(Embedded.scala:226)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.$anonfun$getScala$2(StandaloneSymbolSearch.scala:207)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.getScala(StandaloneSymbolSearch.scala:209)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.addScalaAndJava(StandaloneSymbolSearch.scala:184)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.apply(StandaloneSymbolSearch.scala:142)
+	at scala.meta.internal.metals.Compilers.$anonfun$fallbackCompiler$3(Compilers.scala:140)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.Compilers.$anonfun$fallbackCompiler$1(Compilers.scala:133)
+	at java.base/java.util.HashMap.compute(HashMap.java:1228)
+	at java.base/java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.Compilers.fallbackCompiler(Compilers.scala:115)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$compile$6(InteractiveSemanticdbs.scala:175)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:175)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.base/java.util.HashMap.compute(HashMap.java:1228)
+	at java.base/java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:84)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:58)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1531)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1529)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Unexpected exception when forwarding server stdin ---> client stdout
+java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:256)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:94)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.nio.channels.Channels$WritableByteChannelImpl.write(Channels.java:464)
+	at bloop.launcher.bsp.BspBridge.copyContents(BspBridge.scala:291)
+	at bloop.launcher.bsp.BspBridge.forwardStreamContents(BspBridge.scala:275)
+	at bloop.launcher.bsp.BspBridge.$anonfun$wireBspConnectionStreams$2(BspBridge.scala:228)
+	at bloop.bloopgun.core.Shell$$anon$2.run(Shell.scala:156)
+Exception in thread "pool-1-thread-7" java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1343)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.tryAwait0(Promise.scala:207)
+	at coursierapi.shaded.scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:225)
+	at coursierapi.shaded.scala.concurrent.Await$.$anonfun$result$1(package.scala:201)
+	at coursierapi.shaded.scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:62)
+	at coursierapi.shaded.scala.concurrent.Await$.result(package.scala:124)
+	at coursierapi.shaded.coursier.Fetch$FetchTaskOps$.eitherResult$extension(Fetch.scala:311)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper$.doFetch(ApiHelper.scala:334)
+	at coursierapi.shaded.coursier.internal.api.ApiHelper.doFetch(ApiHelper.scala)
+	at coursierapi.Fetch.fetchResult(Fetch.java:244)
+	at coursierapi.Fetch.fetch(Fetch.java:239)
+	at scala.meta.internal.metals.Embedded$.downloadDependency(Embedded.scala:219)
+	at scala.meta.internal.metals.Embedded$.downloadScalaSources(Embedded.scala:226)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.$anonfun$getScala$2(StandaloneSymbolSearch.scala:207)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.getScala(StandaloneSymbolSearch.scala:209)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.addScalaAndJava(StandaloneSymbolSearch.scala:184)
+	at scala.meta.internal.metals.StandaloneSymbolSearch$.apply(StandaloneSymbolSearch.scala:142)
+	at scala.meta.internal.metals.Compilers.$anonfun$fallbackCompiler$3(Compilers.scala:140)
+	at scala.util.Try$.apply(Try.scala:213)
+	at scala.meta.internal.metals.Compilers.$anonfun$fallbackCompiler$1(Compilers.scala:133)
+	at java.base/java.util.HashMap.compute(HashMap.java:1228)
+	at java.base/java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.Compilers.fallbackCompiler(Compilers.scala:115)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$compile$6(InteractiveSemanticdbs.scala:175)
+	at scala.Option.getOrElse(Option.scala:189)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:175)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:88)
+	at java.base/java.util.HashMap.compute(HashMap.java:1228)
+	at java.base/java.util.Collections$SynchronizedMap.compute(Collections.java:2692)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:84)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:58)
+	at scala.meta.internal.metals.AggregateSemanticdbs.loop$1(AggregateSemanticdbs.scala:30)
+	at scala.meta.internal.metals.AggregateSemanticdbs.textDocument(AggregateSemanticdbs.scala:36)
+	at scala.meta.internal.metals.CodeLensProvider.findLenses(CodeLensProvider.scala:22)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$2(MetalsLanguageServer.scala:1531)
+	at scala.meta.internal.metals.TimerProvider.timedThunk(TimerProvider.scala:25)
+	at scala.meta.internal.metals.MetalsLanguageServer.$anonfun$codeLens$1(MetalsLanguageServer.scala:1529)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Unexpected exception when forwarding server stdin ---> client stdout
+java.io.IOException: Broken pipe
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SinkChannelImpl.write(SinkChannelImpl.java:256)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:94)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.nio.channels.Channels$WritableByteChannelImpl.write(Channels.java:464)
+	at bloop.launcher.bsp.BspBridge.copyContents(BspBridge.scala:291)
+	at bloop.launcher.bsp.BspBridge.forwardStreamContents(BspBridge.scala:275)
+	at bloop.launcher.bsp.BspBridge.$anonfun$wireBspConnectionStreams$2(BspBridge.scala:228)
+	at bloop.bloopgun.core.Shell$$anon$2.run(Shell.scala:156)
+java.util.concurrent.RejectedExecutionException: Task scala.concurrent.impl.CallbackRunnable@39684595 rejected from java.util.concurrent.ThreadPoolExecutor@64c06547[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 67]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2055)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:825)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1355)
+	at scala.concurrent.impl.ExecutionContextImpl$$anon$4.execute(ExecutionContextImpl.scala:138)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:72)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.$anonfun$tryComplete$1$adapted(Promise.scala:288)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:288)
+	at scala.concurrent.Promise.complete(Promise.scala:53)
+	at scala.concurrent.Promise.complete$(Promise.scala:52)
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:187)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+[0m2021.09.20 21:25:37 INFO  Started: Metals version 0.10.7 in workspace '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview' for client Visual Studio Code 1.60.1.[0m
+[0m2021.09.20 21:25:40 INFO  time: initialize in 3.5s[0m
+[0m2021.09.20 21:25:42 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher14491268459750289723/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.09.20 21:25:42 WARN  no build target for: /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop/root-test.json'
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root-test' from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Loading previous analysis for 'root' from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher14491268459750289723/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher14491268459750289723/bsp.socket...
+[0m2021.09.20 21:25:43 INFO  skipping build import with status 'Installed'[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.09.20 21:25:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.09.20 21:25:43 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher12062245382302002991/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher12062245382302002991/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher12062245382302002991/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.09.20 21:25:43 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.09.20 21:25:43 INFO  time: Connected to build server in 0.99s[0m
+[0m2021.09.20 21:25:43 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.09.20 21:25:54 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.09.20 21:25:59 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.09.20 21:26:06 INFO  time: indexed workspace in 12s[0m
+[0m2021.09.20 21:26:07 INFO  time: code lens generation in 21s[0m
+[0m2021.09.20 21:26:12 INFO  no build target: using presentation compiler with only scala-library: 2.13.6[0m
+[0m2021.09.20 21:26:24 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:26:26 INFO  time: compiled root in 1.79s[0m
+Sep 20, 2021 9:26:26 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.09.20 21:26:30 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:26:40 INFO  time: compiled root in 10s[0m
+[0m2021.09.20 21:26:40 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:26:44 INFO  time: compiled root in 3.41s[0m
+[0m2021.09.20 21:26:44 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:26:45 INFO  time: compiled root in 1.26s[0m
+[0m2021.09.20 21:26:45 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:26:48 INFO  time: compiled root in 2.23s[0m
+[0m2021.09.20 21:26:50 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:26:54 INFO  time: compiled root in 4.2s[0m
+[0m2021.09.20 21:27:30 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:27:30 INFO  time: compiled root in 0.65s[0m
+[0m2021.09.20 21:28:39 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:28:39 INFO  time: compiled root in 0.94s[0m
+[0m2021.09.20 21:28:44 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:28:44 INFO  time: compiled root in 0.59s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 5794, 5794, 5809)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 5794, 5794, 5802)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 5794, 5794, 5802)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 5794, 5794, 5802)
+Sep 20, 2021 9:28:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 211
+[0m2021.09.20 21:28:58 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:28:58 INFO  time: compiled root in 0.58s[0m
+[0m2021.09.20 21:29:03 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:03 INFO  time: compiled root in 0.59s[0m
+[0m2021.09.20 21:29:04 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:04 INFO  time: compiled root in 0.52s[0m
+[0m2021.09.20 21:29:06 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:06 INFO  time: compiled root in 0.24s[0m
+[0m2021.09.20 21:29:10 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:10 INFO  time: compiled root in 0.27s[0m
+[0m2021.09.20 21:29:14 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:14 INFO  time: compiled root in 0.65s[0m
+[0m2021.09.20 21:29:17 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:17 INFO  time: compiled root in 0.56s[0m
+[0m2021.09.20 21:29:22 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:22 INFO  time: compiled root in 0.44s[0m
+[0m2021.09.20 21:29:26 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:26 INFO  time: compiled root in 0.39s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 5813, 5813, 5829)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 5813, 5813, 5830)
+[0m2021.09.20 21:29:38 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:38 INFO  time: compiled root in 0.43s[0m
+[0m2021.09.20 21:29:47 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:47 INFO  time: compiled root in 0.64s[0m
+[0m2021.09.20 21:29:55 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:29:55 INFO  time: compiled root in 0.35s[0m
+[0m2021.09.20 21:30:01 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:30:01 INFO  time: compiled root in 0.47s[0m
+[0m2021.09.20 21:30:48 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:30:48 INFO  time: compiled root in 0.2s[0m
+[0m2021.09.20 21:30:54 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:30:54 INFO  time: compiled root in 0.16s[0m
+[0m2021.09.20 21:30:55 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:30:55 INFO  time: compiled root in 0.26s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 5794, 5794, 5802)
+[0m2021.09.20 21:31:11 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:31:11 INFO  time: compiled root in 0.17s[0m
+[0m2021.09.20 21:31:16 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:31:16 INFO  time: compiled root in 0.14s[0m
+[0m2021.09.20 21:31:18 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:31:18 INFO  time: compiled root in 0.18s[0m
+[0m2021.09.20 21:31:25 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:31:25 INFO  time: compiled root in 0.43s[0m
+[0m2021.09.20 21:31:35 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:31:35 INFO  time: compiled root in 0.13s[0m
+[0m2021.09.20 21:31:42 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:31:42 INFO  time: compiled root in 0.18s[0m
+[0m2021.09.20 21:32:20 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:32:20 INFO  time: compiled root in 0.15s[0m
+[0m2021.09.20 21:32:37 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:32:37 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 21:32:39 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:32:39 INFO  time: compiled root in 0.15s[0m
+[0m2021.09.20 21:32:45 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:32:45 INFO  time: compiled root in 0.15s[0m
+[0m2021.09.20 21:32:48 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:32:48 INFO  time: compiled root in 0.17s[0m
+[0m2021.09.20 21:32:52 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:32:52 INFO  time: compiled root in 0.17s[0m
+[0m2021.09.20 21:33:09 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:33:09 INFO  time: compiled root in 0.49s[0m
+[0m2021.09.20 21:33:24 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:33:24 INFO  time: compiled root in 0.23s[0m
+[0m2021.09.20 21:34:11 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:34:11 INFO  time: compiled root in 0.2s[0m
+[0m2021.09.20 21:34:16 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:34:16 INFO  time: compiled root in 0.45s[0m
+[0m2021.09.20 21:34:29 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:34:29 INFO  time: compiled root in 0.47s[0m
+[0m2021.09.20 21:34:33 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:34:33 INFO  time: compiled root in 0.16s[0m
+[0m2021.09.20 21:34:57 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:34:57 INFO  time: compiled root in 0.46s[0m
+[0m2021.09.20 21:35:01 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:35:01 INFO  time: compiled root in 0.14s[0m
+[0m2021.09.20 21:35:05 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:35:05 INFO  time: compiled root in 0.12s[0m
+[0m2021.09.20 21:35:09 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:35:09 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 21:35:14 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:35:14 INFO  time: compiled root in 0.41s[0m
+[0m2021.09.20 21:35:21 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:35:27 INFO  time: compiled root in 5.3s[0m
+Sep 20, 2021 9:35:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 851
+[0m2021.09.20 21:35:33 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:35:35 INFO  time: compiled root in 2.64s[0m
+[0m2021.09.20 21:35:51 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:35:56 INFO  time: compiled root in 4.8s[0m
+[0m2021.09.20 21:36:01 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:36:05 INFO  time: compiled root in 3.52s[0m
+[0m2021.09.20 21:36:08 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.20 21:36:08 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.20 21:36:09 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.20 21:36:09 INFO  Trying to attach to remote debuggee VM localhost:49745 .[0m
+[0m2021.09.20 21:36:09 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.20 21:36:09 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.20 21:36:09 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.20 21:36:09 INFO  Closing debug server tcp://0.0.0.0:49742[0m
+Sep 20, 2021 9:36:09 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: java.net.SocketException: Socket closed
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.net.SocketException: Socket closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.debug.SocketEndpoint.consume(SocketEndpoint.scala:22)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.consume(MessageIdAdapter.scala:43)
+	at scala.meta.internal.metals.debug.ServerAdapter.send(ServerAdapter.scala:30)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleClientMessage$1(DebugProxy.scala:96)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToClient$1(DebugProxy.scala:61)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 21 more
+
+[0m2021.09.20 21:36:31 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:36:31 INFO  time: compiled root in 0.56s[0m
+[0m2021.09.20 21:36:34 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:36:36 INFO  time: compiled root in 2.37s[0m
+[0m2021.09.20 21:36:38 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 10m 54.683s)[0m
+[0m2021.09.20 21:36:38 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.20 21:36:38 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.20 21:36:38 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.20 21:36:38 INFO  Trying to attach to remote debuggee VM localhost:49761 .[0m
+[0m2021.09.20 21:36:38 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.20 21:36:38 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.20 21:36:39 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.20 21:36:39 INFO  Closing debug server tcp://0.0.0.0:49758[0m
+[0m2021.09.20 21:36:44 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:36:44 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 11m 1.907s)[0m
+[0m2021.09.20 21:36:44 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:36:47 INFO  time: compiled root in 2s[0m
+[0m2021.09.20 21:36:47 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.20 21:36:47 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.20 21:36:47 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.20 21:36:47 INFO  Trying to attach to remote debuggee VM localhost:49775 .[0m
+[0m2021.09.20 21:36:47 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.20 21:36:47 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.20 21:36:47 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.20 21:36:47 INFO  Closing debug server tcp://0.0.0.0:49772[0m
+[0m2021.09.20 21:37:59 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:38:02 INFO  time: compiled root in 3.31s[0m
+[0m2021.09.20 21:38:06 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:38:06 INFO  time: compiled root in 0.25s[0m
+Sep 20, 2021 9:38:06 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.09.20 21:38:08 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:38:12 INFO  time: compiled root in 3.45s[0m
+[0m2021.09.20 21:38:16 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:38:18 INFO  time: compiled root in 2.66s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 1635, 1635, 1643)
+[0m2021.09.20 21:38:26 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:38:29 INFO  time: compiled root in 2.46s[0m
+[0m2021.09.20 21:38:43 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:38:43 INFO  time: compiled root in 0.49s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6490, 6490, 6504)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6490, 6490, 6497)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6490, 6490, 6497)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6490, 6490, 6497)
+[0m2021.09.20 21:48:33 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:48:33 INFO  time: compiled root in 0.47s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6502, 6502, 6516)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6502, 6502, 6509)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6502, 6502, 6509)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6502, 6502, 6509)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6513, 6513, 6527)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6513, 6513, 6520)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6513, 6513, 6520)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6513, 6513, 6520)
+[0m2021.09.20 21:48:42 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:48:42 INFO  time: compiled root in 0.53s[0m
+[0m2021.09.20 21:48:50 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:48:50 INFO  time: compiled root in 0.35s[0m
+[0m2021.09.20 21:48:56 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:48:56 INFO  time: compiled root in 0.3s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6490, 6490, 6497)
+[0m2021.09.20 21:49:00 INFO  compiling root (1 scala source)[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6511, 6511, 6518)
+[0m2021.09.20 21:49:00 INFO  time: compiled root in 0.39s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in List[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6523, 6523, 6530)
+[0m2021.09.20 21:49:02 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:02 INFO  time: compiled root in 0.31s[0m
+[0m2021.09.20 21:49:04 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:04 INFO  time: compiled root in 0.36s[0m
+[0m2021.09.20 21:49:06 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:06 INFO  time: compiled root in 0.34s[0m
+[0m2021.09.20 21:49:33 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:33 INFO  time: compiled root in 0.38s[0m
+[0m2021.09.20 21:49:35 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:35 INFO  time: compiled root in 0.29s[0m
+[0m2021.09.20 21:49:48 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:48 INFO  time: compiled root in 0.12s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 685, 685, 700)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 685, 685, 693)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 685, 685, 693)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 685, 685, 693)
+[0m2021.09.20 21:49:52 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:52 INFO  time: compiled root in 0.29s[0m
+[0m2021.09.20 21:49:58 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:49:58 INFO  time: compiled root in 0.28s[0m
+[0m2021.09.20 21:50:02 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:02 INFO  time: compiled root in 0.27s[0m
+[0m2021.09.20 21:50:04 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:04 INFO  time: compiled root in 0.11s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 692, 692, 707)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 692, 692, 700)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 692, 692, 700)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 692, 692, 700)
+[0m2021.09.20 21:50:10 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:10 INFO  time: compiled root in 0.11s[0m
+[0m2021.09.20 21:50:12 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:12 INFO  time: compiled root in 94ms[0m
+[0m2021.09.20 21:50:14 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:14 INFO  time: compiled root in 0.11s[0m
+[0m2021.09.20 21:50:20 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:20 INFO  time: compiled root in 0.38s[0m
+[0m2021.09.20 21:50:29 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:29 INFO  time: compiled root in 0.34s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 1694, 1694, 1702)
+[0m2021.09.20 21:50:46 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:46 INFO  time: compiled root in 0.34s[0m
+[0m2021.09.20 21:50:47 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:50:47 INFO  time: compiled root in 0.25s[0m
+[0m2021.09.20 21:51:05 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:05 INFO  time: compiled root in 0.42s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6705, 6705, 6720)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6705, 6705, 6713)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6705, 6705, 6713)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6705, 6705, 6713)
+[0m2021.09.20 21:51:09 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:09 INFO  time: compiled root in 0.41s[0m
+[0m2021.09.20 21:51:23 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:23 INFO  time: compiled root in 0.1s[0m
+[0m2021.09.20 21:51:25 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:25 INFO  time: compiled root in 94ms[0m
+[0m2021.09.20 21:51:26 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:26 INFO  time: compiled root in 0.13s[0m
+[0m2021.09.20 21:51:28 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:28 INFO  time: compiled root in 0.29s[0m
+[0m2021.09.20 21:51:32 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:32 INFO  time: compiled root in 97ms[0m
+[0m2021.09.20 21:51:36 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:36 INFO  time: compiled root in 0.29s[0m
+[0m2021.09.20 21:51:43 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:43 INFO  time: compiled root in 99ms[0m
+[0m2021.09.20 21:51:47 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:47 INFO  time: compiled root in 86ms[0m
+[0m2021.09.20 21:51:50 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:50 INFO  time: compiled root in 0.13s[0m
+[0m2021.09.20 21:51:51 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:51 INFO  time: compiled root in 98ms[0m
+[0m2021.09.20 21:51:55 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:51:55 INFO  time: compiled root in 0.27s[0m
+[0m2021.09.20 21:52:01 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:52:01 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 21:52:06 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:52:06 INFO  time: compiled root in 0.3s[0m
+[0m2021.09.20 21:52:49 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:52:49 INFO  time: compiled root in 0.34s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6702, 6702, 6710)
+[0m2021.09.20 21:53:02 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:53:04 INFO  time: compiled root in 1.84s[0m
+[0m2021.09.20 21:53:09 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:53:09 INFO  time: compiled root in 0.27s[0m
+[0m2021.09.20 21:53:15 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:53:17 INFO  time: compiled root in 1.94s[0m
+[0m2021.09.20 21:53:22 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:53:22 INFO  time: compiled root in 0.26s[0m
+[0m2021.09.20 21:54:23 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:54:23 INFO  time: compiled root in 95ms[0m
+[0m2021.09.20 21:54:30 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:54:30 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 21:54:44 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:54:44 INFO  time: compiled root in 0.27s[0m
+[0m2021.09.20 21:54:48 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:54:48 INFO  time: compiled root in 0.23s[0m
+[0m2021.09.20 21:55:01 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:55:01 INFO  time: compiled root in 0.28s[0m
+[0m2021.09.20 21:55:05 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:55:05 INFO  time: compiled root in 0.29s[0m
+Sep 20, 2021 9:55:05 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.09.20 21:55:06 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:55:06 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 21:55:12 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:55:12 INFO  time: compiled root in 0.3s[0m
+[0m2021.09.20 21:55:19 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:55:19 INFO  time: compiled root in 0.21s[0m
+Sep 20, 2021 9:55:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2391
+[0m2021.09.20 21:56:00 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:56:00 INFO  time: compiled root in 0.24s[0m
+[0m2021.09.20 21:56:11 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:56:11 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 21:56:22 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:56:22 INFO  time: compiled root in 0.23s[0m
+[0m2021.09.20 21:56:28 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:56:28 INFO  time: compiled root in 0.25s[0m
+[0m2021.09.20 21:56:42 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:56:44 INFO  time: compiled root in 1.4s[0m
+[0m2021.09.20 21:56:45 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:56:45 INFO  time: compiled root in 0.27s[0m
+[0m2021.09.20 21:56:47 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:56:47 INFO  time: compiled root in 0.29s[0m
+[0m2021.09.20 21:57:05 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:57:05 INFO  time: compiled root in 0.23s[0m
+[0m2021.09.20 21:57:07 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:57:07 INFO  time: compiled root in 0.33s[0m
+[0m2021.09.20 21:59:02 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:59:04 INFO  time: compiled root in 1.75s[0m
+[0m2021.09.20 21:59:29 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:59:29 INFO  time: compiled root in 0.36s[0m
+Sep 20, 2021 9:59:29 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.09.20 21:59:43 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:59:43 INFO  time: compiled root in 0.44s[0m
+[0m2021.09.20 21:59:52 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 21:59:53 INFO  time: compiled root in 1.52s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6630, 6630, 6638)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6618, 6618, 6626)
+[0m2021.09.20 22:00:20 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:20 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 22:00:22 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:22 INFO  time: compiled root in 0.21s[0m
+[0m2021.09.20 22:00:24 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:24 INFO  time: compiled root in 0.22sSep 20, 2021 10:00:24 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m
+Sep 20, 2021 10:00:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2674
+[0m2021.09.20 22:00:26 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:28 INFO  time: compiled root in 1.52s[0m
+[0m2021.09.20 22:00:38 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:39 INFO  time: compiled root in 1.66s[0m
+[0m2021.09.20 22:00:39 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:41 INFO  time: compiled root in 1.39s[0m
+[0m2021.09.20 22:00:41 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:41 INFO  time: compiled root in 0.77s[0m
+[0m2021.09.20 22:00:53 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:53 INFO  time: compiled root in 0.31s[0m
+Sep 20, 2021 10:00:53 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.09.20 22:00:55 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:55 INFO  time: compiled root in 0.36s[0m
+[0m2021.09.20 22:00:56 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:56 INFO  time: compiled root in 0.31s[0m
+[0m2021.09.20 22:00:59 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:00:59 INFO  time: compiled root in 0.26s[0m
+[0m2021.09.20 22:01:10 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:10 INFO  time: compiled root in 0.23s[0m
+[0m2021.09.20 22:01:14 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:14 INFO  time: compiled root in 0.2s[0m
+[0m2021.09.20 22:01:24 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:24 INFO  time: compiled root in 0.24s[0m
+[0m2021.09.20 22:01:26 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:26 INFO  time: compiled root in 0.12s[0m
+[0m2021.09.20 22:01:30 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:30 INFO  time: compiled root in 0.35s[0m
+[0m2021.09.20 22:01:36 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:36 INFO  time: compiled root in 0.28s[0m
+[0m2021.09.20 22:01:37 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:37 INFO  time: compiled root in 0.27s[0m
+[0m2021.09.20 22:01:41 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:41 INFO  time: compiled root in 0.19s[0m
+[0m2021.09.20 22:01:42 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:42 INFO  time: compiled root in 0.15s[0m
+[0m2021.09.20 22:01:52 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:01:52 INFO  time: compiled root in 0.17s[0m
+[0m2021.09.20 22:02:35 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:02:35 INFO  time: compiled root in 0.2s[0m
+[0m2021.09.20 22:03:46 INFO  compiling root (1 scala source)[0m
+[0m2021.09.20 22:03:46 INFO  time: compiled root in 0.23s[0m
