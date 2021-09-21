@@ -24543,3 +24543,571 @@ INFO: compiler crashed due to an error in the Scala compiler, retrying with new 
 [0m2021.09.20 22:02:35 INFO  time: compiled root in 0.2s[0m
 [0m2021.09.20 22:03:46 INFO  compiling root (1 scala source)[0m
 [0m2021.09.20 22:03:46 INFO  time: compiled root in 0.23s[0m
+[0m2021.09.20 22:08:41 INFO  shutting down Metals[0m
+[0m2021.09.20 22:08:41 INFO  Shut down connection with build server.[0m
+[0m2021.09.20 22:08:41 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.09.21 13:49:46 INFO  Started: Metals version 0.10.7 in workspace '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview' for client Visual Studio Code 1.60.1.[0m
+[0m2021.09.21 13:49:49 INFO  time: initialize in 2.84s[0m
+[0m2021.09.21 13:49:50 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher8438136045782734533/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m2021.09.21 13:49:50 WARN  no build target for: /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala[0m
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop'...
+[0m[32m[D][0m Loading project from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop/root.json'
+[0m[32m[D][0m Loading project from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/.bloop/root-test.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.13.6.
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.19.0/jline-3.19.0.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.13.6/scala-compiler-2.13.6.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.jar
+[0m[32m[D][0m   => /Users/piotrrudnicki/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.6/scala-reflect-2.13.6.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'root', 'root-test'
+[0m[32m[D][0m Loading previous analysis for 'root-test' from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Loading previous analysis for 'root' from '/Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher8438136045782734533/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher8438136045782734533/bsp.socket...
+[0m2021.09.21 13:49:50 INFO  skipping build import with status 'Installed'[0m
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.09.21 13:49:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.09.21 13:49:51 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher11968619213532085036/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher11968619213532085036/bsp.socket...
+The server is listening for incoming connections at local:///var/folders/wj/708cxxtn0rs2hs96tl_xn2g00000gn/T/bsp-launcher11968619213532085036/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.09.21 13:49:51 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+[0m2021.09.21 13:49:51 INFO  time: Connected to build server in 1.11s[0m
+[0m2021.09.21 13:49:51 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.09.21 13:50:01 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.09.21 13:50:01 INFO  time: Imported build in 0.11s[0m
+[0m2021.09.21 13:50:04 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.09.21 13:50:14 INFO  time: code lens generation in 23s[0m
+[0m2021.09.21 13:50:15 WARN  no build target for: /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala[0m
+[0m2021.09.21 13:50:16 INFO  time: code lens generation in 3.52s[0m
+[0m2021.09.21 13:50:17 INFO  time: code lens generation in 6.36s[0m
+[0m2021.09.21 13:50:17 INFO  time: code lens generation in 7.32s[0m
+[0m2021.09.21 13:50:18 INFO  time: code lens generation in 8.8s[0m
+[0m2021.09.21 13:50:18 INFO  time: code lens generation in 11s[0m
+[0m2021.09.21 13:50:19 INFO  time: code lens generation in 13s[0m
+[0m2021.09.21 13:50:20 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:50:21 INFO  time: code lens generation in 15s[0m
+[0m2021.09.21 13:50:28 INFO  no build target: using presentation compiler with only scala-library: 2.13.6[0m
+[0m2021.09.21 13:50:30 INFO  time: compiled root in 9.66s[0m
+Sep 21, 2021 1:50:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 89
+[0m2021.09.21 13:50:30 INFO  compiling root (1 scala source)[0m
+Sep 21, 2021 1:50:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 95
+Sep 21, 2021 1:50:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 99
+Sep 21, 2021 1:50:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 106
+Sep 21, 2021 1:50:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 110
+Sep 21, 2021 1:50:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 120
+[0m2021.09.21 13:50:33 INFO  time: compiled root in 2.39s[0m
+[0m2021.09.21 13:50:33 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:50:35 INFO  time: compiled root in 2.58s[0m
+[0m2021.09.21 13:50:37 INFO  time: indexed workspace in 35s[0m
+[0m2021.09.21 13:50:37 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:50:39 INFO  time: compiled root in 1.74s[0m
+[0m2021.09.21 13:50:41 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:50:43 INFO  time: compiled root in 1.75s[0m
+[0m2021.09.21 13:50:45 INFO  time: code lens generation in 26s[0m
+[0m2021.09.21 13:50:46 INFO  time: code lens generation in 28s[0m
+[0m2021.09.21 13:50:48 INFO  time: code lens generation in 31s[0m
+[0m2021.09.21 13:50:49 INFO  time: code lens generation in 32s[0m
+[0m2021.09.21 13:50:50 INFO  time: code lens generation in 33s[0m
+[0m2021.09.21 13:50:50 INFO  time: code lens generation in 35s[0m
+[0m2021.09.21 13:50:51 INFO  time: code lens generation in 37s[0m
+[0m2021.09.21 13:50:57 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:50:58 INFO  time: compiled root in 1.51s[0m
+[0m2021.09.21 13:51:01 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:02 INFO  time: compiled root in 1.22s[0m
+[0m2021.09.21 13:51:06 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:06 INFO  time: compiled root in 0.95s[0m
+[0m2021.09.21 13:51:12 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:12 INFO  time: compiled root in 0.94s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6633, 6633, 6648)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6633, 6633, 6641)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6633, 6633, 6641)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6633, 6633, 6641)
+[0m2021.09.21 13:51:34 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:35 INFO  time: compiled root in 1.28s[0m
+[0m2021.09.21 13:51:35 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:35 INFO  time: compiled root in 0.15s[0m
+[0m2021.09.21 13:51:40 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:40 INFO  time: compiled root in 0.73s[0m
+[0m2021.09.21 13:51:46 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:46 INFO  time: compiled root in 0.95s[0m
+[0m2021.09.21 13:51:48 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:51:48 INFO  time: compiled root in 0.68s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6682, 6682, 6700)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6682, 6682, 6701)
+[0m2021.09.21 13:52:13 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:52:13 INFO  time: compiled root in 0.52s[0m
+[0m2021.09.21 13:52:27 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:52:27 INFO  time: compiled root in 0.44s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 6682, 6682, 6690)
+[0m2021.09.21 13:52:45 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:52:45 INFO  time: compiled root in 0.69s[0m
+[0m2021.09.21 13:52:48 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:52:48 INFO  time: compiled root in 0.48s[0m
+[0m2021.09.21 13:52:58 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:52:58 INFO  time: compiled root in 0.67s[0m
+[0m2021.09.21 13:53:00 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:00 INFO  time: compiled root in 0.2s[0m
+[0m2021.09.21 13:53:04 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:04 INFO  time: compiled root in 0.4s[0m
+[0m2021.09.21 13:53:10 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:10 INFO  time: compiled root in 0.25s[0m
+[0m2021.09.21 13:53:16 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:16 INFO  time: compiled root in 0.16s[0m
+[0m2021.09.21 13:53:18 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:18 INFO  time: compiled root in 0.22s[0m
+[0m2021.09.21 13:53:21 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:21 INFO  time: compiled root in 0.22s[0m
+[0m2021.09.21 13:53:25 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:25 INFO  time: compiled root in 0.43s[0m
+[0m2021.09.21 13:53:38 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:44 INFO  time: compiled root in 6.56s[0m
+[0m2021.09.21 13:53:52 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:57 INFO  time: compiled root in 5.65s[0m
+[0m2021.09.21 13:53:59 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:53:59 INFO  time: compiled root in 0.55s[0m
+[0m2021.09.21 13:54:03 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:54:07 INFO  time: compiled root in 3.94s[0m
+[0m2021.09.21 13:54:08 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 13:54:08 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 13:54:09 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:54:09 INFO  Trying to attach to remote debuggee VM localhost:50156 .[0m
+[0m2021.09.21 13:54:09 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 13:54:09 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 13:54:09 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:54:09 INFO  Closing debug server tcp://0.0.0.0:50153[0m
+[0m2021.09.21 13:54:14 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:54:14 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 4m 24.09s)[0m
+[0m2021.09.21 13:54:14 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:54:17 INFO  time: compiled root in 1.98s[0m
+[0m2021.09.21 13:54:17 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 13:54:17 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 13:54:17 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:54:17 INFO  Trying to attach to remote debuggee VM localhost:50167 .[0m
+[0m2021.09.21 13:54:17 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 13:54:17 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 13:54:17 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:54:17 INFO  Closing debug server tcp://0.0.0.0:50165[0m
+Sep 21, 2021 1:54:18 PM org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer fireError
+SEVERE: java.net.SocketException: Socket closed
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.net.SocketException: Socket closed
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at scala.meta.internal.metals.debug.SocketEndpoint.consume(SocketEndpoint.scala:22)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.consume(MessageIdAdapter.scala:43)
+	at scala.meta.internal.metals.debug.ServerAdapter.send(ServerAdapter.scala:30)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$handleClientMessage$1(DebugProxy.scala:96)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.$anonfun$listen$1(MessageIdAdapter.scala:57)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at scala.meta.internal.metals.debug.SocketEndpoint.listen(SocketEndpoint.scala:26)
+	at scala.meta.internal.metals.debug.MessageIdAdapter.listen(MessageIdAdapter.scala:47)
+	at scala.meta.internal.metals.debug.DebugProxy.$anonfun$listenToClient$1(DebugProxy.scala:61)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+	at scala.util.Success.map(Try.scala:213)
+	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.net.SocketException: Socket closed
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:113)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:150)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 21 more
+
+[0m2021.09.21 13:54:22 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:54:22 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 4m 31.169s)[0m
+[0m2021.09.21 13:54:22 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:54:25 INFO  time: compiled root in 2.62s[0m
+[0m2021.09.21 13:54:25 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 13:54:25 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 13:54:25 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:54:25 INFO  Trying to attach to remote debuggee VM localhost:50180 .[0m
+[0m2021.09.21 13:54:25 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 13:54:25 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 13:54:25 INFO  Closing debug server tcp://0.0.0.0:50178[0m
+[0m2021.09.21 13:54:26 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:54:46 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:92:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:54:46 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:92:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:54:46 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:92:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:54:46 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:92:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:54:46 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:92:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:54:47 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:92:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:54:48 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:54:50 INFO  time: compiled root in 2.33s[0m
+[0m2021.09.21 13:54:55 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:54:56 INFO  time: compiled root in 1.82s[0m
+[0m2021.09.21 13:55:03 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:03 INFO  time: compiled root in 0.5s[0m
+[0m2021.09.21 13:55:04 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:08 INFO  time: compiled root in 3.53s[0m
+[0m2021.09.21 13:55:18 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:21 INFO  time: compiled root in 2.74s[0m
+[0m2021.09.21 13:55:26 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:30 INFO  time: compiled root in 3.56s[0m
+[0m2021.09.21 13:55:30 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:32 INFO  time: compiled root in 1.55s[0m
+[0m2021.09.21 13:55:33 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 5m 42.526s)[0m
+[0m2021.09.21 13:55:34 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 13:55:34 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 13:55:34 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:55:33 INFO  Trying to attach to remote debuggee VM localhost:50213 .[0m
+[0m2021.09.21 13:55:33 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 13:55:33 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 13:55:34 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:55:33 INFO  Closing debug server tcp://0.0.0.0:50211[0m
+[0m2021.09.21 13:55:39 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:39 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 5m 47.931s)[0m
+[0m2021.09.21 13:55:39 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:41 INFO  time: compiled root in 2.54s[0m
+[0m2021.09.21 13:55:41 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 13:55:41 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 13:55:42 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:55:41 INFO  Trying to attach to remote debuggee VM localhost:50226 .[0m
+[0m2021.09.21 13:55:41 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 13:55:41 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 13:55:42 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:55:41 INFO  Closing debug server tcp://0.0.0.0:50224[0m
+[0m2021.09.21 13:55:45 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:55:47 INFO  time: compiled root in 2.14s[0m
+[0m2021.09.21 13:55:47 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 5m 57.155s)[0m
+[0m2021.09.21 13:55:48 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 13:55:48 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 13:55:48 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:55:48 INFO  Trying to attach to remote debuggee VM localhost:50239 .[0m
+[0m2021.09.21 13:55:48 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 13:55:48 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 13:55:49 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:55:48 INFO  Closing debug server tcp://0.0.0.0:50237[0m
+[0m2021.09.21 13:56:15 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:56:17 INFO  time: compiled root in 2.03s[0m
+[0m2021.09.21 13:56:18 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:56:18 INFO  time: compiled root in 0.45s[0m
+[0m2021.09.21 13:56:25 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:56:25 INFO  time: compiled root in 0.62s[0m
+Sep 21, 2021 1:56:26 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFO: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+[0m2021.09.21 13:56:29 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:56:32 INFO  time: compiled root in 2.25s[0m
+[0m2021.09.21 13:56:35 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:56:38 INFO  time: compiled root in 2.9s[0m
+[0m2021.09.21 13:56:40 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:56:42 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:95:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:56:42 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:95:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:56:43 INFO  /Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala:95:63: stale bloop warning: match may not be exhaustive.
+It would fail on the following inputs: ::(_, _), RNil
+        def length0(list: RList[T], currentIndex: Int): Int = list match { 
+                                                              ^^^^[0m
+[0m2021.09.21 13:56:43 INFO  time: compiled root in 2.39s[0m
+[0m2021.09.21 13:56:50 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:56:53 INFO  time: compiled root in 2.16s[0m
+[0m2021.09.21 13:56:58 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:57:01 INFO  time: compiled root in 2.64s[0m
+[0m2021.09.21 13:57:02 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 7m 11.139s)[0m
+[0m2021.09.21 13:57:02 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 13:57:02 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 13:57:02 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:57:02 INFO  Trying to attach to remote debuggee VM localhost:50275 .[0m
+[0m2021.09.21 13:57:02 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 13:57:02 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 13:57:02 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 13:57:03 INFO  Closing debug server tcp://0.0.0.0:50273[0m
+[0m2021.09.21 13:58:41 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:58:45 INFO  time: compiled root in 3.88s[0m
+[0m2021.09.21 13:58:45 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:58:47 INFO  time: compiled root in 1.6s[0m
+[0m2021.09.21 13:58:53 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:58:56 INFO  time: compiled root in 2.5s[0m
+[0m2021.09.21 13:59:06 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:59:06 INFO  time: compiled root in 0.46s[0m
+Sep 21, 2021 1:59:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1424
+[0m2021.09.21 13:59:08 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:59:08 INFO  time: compiled root in 0.3s[0m
+[0m2021.09.21 13:59:50 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:59:50 INFO  time: compiled root in 0.29s[0m
+[0m2021.09.21 13:59:54 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:59:54 INFO  time: compiled root in 0.35s[0m
+[0m2021.09.21 13:59:58 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 13:59:58 INFO  time: compiled root in 0.39s[0m
+[0m2021.09.21 14:00:04 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:00:04 INFO  time: compiled root in 0.36s[0m
+[0m2021.09.21 14:00:28 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:00:28 INFO  time: compiled root in 0.3s[0m
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[<error>]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 7415, 7415, 7430)
+something's wrong: no file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala in com.deamondev.lists.RList[T]RangePosition(file:///Users/piotrrudnicki/Documents/MyProgrammingProjects/Scala/rockthejvm-interview/src/main/scala/com.deamondev/lists/ListProblems.scala, 7415, 7415, 7423)
+[0m2021.09.21 14:00:53 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:00:53 INFO  time: compiled root in 0.42s[0m
+[0m2021.09.21 14:00:55 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:00:55 INFO  time: compiled root in 0.31s[0m
+[0m2021.09.21 14:01:02 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:02 INFO  time: compiled root in 0.15s[0m
+[0m2021.09.21 14:01:07 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:07 INFO  time: compiled root in 0.12s[0m
+[0m2021.09.21 14:01:08 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:08 INFO  time: compiled root in 0.17s[0m
+[0m2021.09.21 14:01:17 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:17 INFO  time: compiled root in 0.34s[0m
+[0m2021.09.21 14:01:22 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:22 INFO  time: compiled root in 0.39s[0m
+[0m2021.09.21 14:01:24 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:24 INFO  time: compiled root in 0.44s[0m
+[0m2021.09.21 14:01:28 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:28 INFO  time: compiled root in 0.25s[0m
+[0m2021.09.21 14:01:31 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:31 INFO  time: compiled root in 0.12s[0m
+[0m2021.09.21 14:01:40 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:40 INFO  time: compiled root in 0.35s[0m
+Sep 21, 2021 2:01:46 PM scala.meta.internal.pc.CompletionProvider expected$1
+WARNING: offset 7588, count -1, length 8432
+[0m2021.09.21 14:01:52 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:01:52 INFO  time: compiled root in 89ms[0m
+[0m2021.09.21 14:01:57 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:02:00 INFO  time: compiled root in 3.02s[0m
+[0m2021.09.21 14:02:12 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:02:14 INFO  time: compiled root in 1.94s[0m
+[0m2021.09.21 14:02:16 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 24.67s)[0m
+[0m2021.09.21 14:02:16 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:16 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:16 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:16 INFO  Trying to attach to remote debuggee VM localhost:50401 .[0m
+[0m2021.09.21 14:02:16 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:16 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:16 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:16 INFO  Closing debug server tcp://0.0.0.0:50399[0m
+[0m2021.09.21 14:02:20 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 28.955s)[0m
+[0m2021.09.21 14:02:20 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:20 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:20 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:20 INFO  Trying to attach to remote debuggee VM localhost:50411 .[0m
+[0m2021.09.21 14:02:20 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:20 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:20 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:20 INFO  Closing debug server tcp://0.0.0.0:50409[0m
+[0m2021.09.21 14:02:21 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 30.53s)[0m
+[0m2021.09.21 14:02:22 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:22 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:22 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:21 INFO  Trying to attach to remote debuggee VM localhost:50423 .[0m
+[0m2021.09.21 14:02:21 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:21 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:22 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:21 INFO  Closing debug server tcp://0.0.0.0:50421[0m
+[0m2021.09.21 14:02:23 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 31.83s)[0m
+[0m2021.09.21 14:02:23 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:23 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:22 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:23 INFO  Trying to attach to remote debuggee VM localhost:50433 .[0m
+[0m2021.09.21 14:02:23 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:23 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:24 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:23 INFO  Closing debug server tcp://0.0.0.0:50431[0m
+[0m2021.09.21 14:02:24 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 33.137s)[0m
+[0m2021.09.21 14:02:24 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:24 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:24 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:24 INFO  Trying to attach to remote debuggee VM localhost:50443 .[0m
+[0m2021.09.21 14:02:24 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:24 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:24 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:24 INFO  Closing debug server tcp://0.0.0.0:50441[0m
+[0m2021.09.21 14:02:25 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 34.408s)[0m
+[0m2021.09.21 14:02:25 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:25 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:26 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:25 INFO  Trying to attach to remote debuggee VM localhost:50454 .[0m
+[0m2021.09.21 14:02:25 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:25 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:26 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:25 INFO  Closing debug server tcp://0.0.0.0:50451[0m
+[0m2021.09.21 14:02:27 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 35.716s)[0m
+[0m2021.09.21 14:02:27 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:27 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:27 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:27 INFO  Trying to attach to remote debuggee VM localhost:50463 .[0m
+[0m2021.09.21 14:02:27 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:27 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:27 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:27 INFO  Closing debug server tcp://0.0.0.0:50461[0m
+[0m2021.09.21 14:02:28 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 36.876s)[0m
+[0m2021.09.21 14:02:27 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:28 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:28 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:28 INFO  Trying to attach to remote debuggee VM localhost:50473 .[0m
+[0m2021.09.21 14:02:28 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:28 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:28 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:28 INFO  Closing debug server tcp://0.0.0.0:50471[0m
+[0m2021.09.21 14:02:35 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:02:37 INFO  time: compiled root in 2.21s[0m
+[0m2021.09.21 14:02:37 INFO  compiling root (1 scala source)[0m
+[0m2021.09.21 14:02:38 INFO  time: compiled root in 1.29s[0m
+[0m2021.09.21 14:02:40 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 48.749s)[0m
+[0m2021.09.21 14:02:40 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:40 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:40 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:40 INFO  Trying to attach to remote debuggee VM localhost:50490 .[0m
+[0m2021.09.21 14:02:40 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:40 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:40 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:40 INFO  Closing debug server tcp://0.0.0.0:50488[0m
+[0m2021.09.21 14:02:40 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:40 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:41 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:42 INFO  Trying to attach to remote debuggee VM localhost:50500 .[0m
+[0m2021.09.21 14:02:42 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:42 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:42 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:42 INFO  Closing debug server tcp://0.0.0.0:50498[0m
+[0m2021.09.21 14:02:42 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 51.439s)[0m
+[0m2021.09.21 14:02:42 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:42 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:43 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:43 INFO  Trying to attach to remote debuggee VM localhost:50511 .[0m
+[0m2021.09.21 14:02:43 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:43 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:43 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:43 INFO  Closing debug server tcp://0.0.0.0:50508[0m
+[0m2021.09.21 14:02:43 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 52.617s)[0m
+[0m2021.09.21 14:02:44 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:44 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:44 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:44 INFO  Trying to attach to remote debuggee VM localhost:50520 .[0m
+[0m2021.09.21 14:02:44 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:44 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:44 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:44 INFO  Closing debug server tcp://0.0.0.0:50518[0m
+[0m2021.09.21 14:02:44 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 53.718s)[0m
+[0m2021.09.21 14:02:45 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:45 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:45 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:45 INFO  Trying to attach to remote debuggee VM localhost:50530 .[0m
+[0m2021.09.21 14:02:45 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:45 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:45 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:45 INFO  Closing debug server tcp://0.0.0.0:50528[0m
+[0m2021.09.21 14:02:45 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 55.055s)[0m
+[0m2021.09.21 14:02:46 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:46 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:46 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:46 INFO  Trying to attach to remote debuggee VM localhost:50540 .[0m
+[0m2021.09.21 14:02:46 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:46 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:46 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:46 INFO  Closing debug server tcp://0.0.0.0:50538[0m
+[0m2021.09.21 14:02:46 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 56.223s)[0m
+[0m2021.09.21 14:02:47 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:47 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:47 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:48 INFO  Trying to attach to remote debuggee VM localhost:50550 .[0m
+[0m2021.09.21 14:02:48 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:48 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:48 INFO  Closing debug server tcp://0.0.0.0:50548[0m
+[0m2021.09.21 14:02:48 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:49 INFO  Deduplicating compilation of root from bsp client 'Metals 0.10.7' (since 12m 57.623s)[0m
+[0m2021.09.21 14:02:49 INFO  tracing is disabled for protocol dap-server, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-server.trace.json[0m
+[0m2021.09.21 14:02:49 INFO  tracing is disabled for protocol dap-client, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/piotrrudnicki/Library/Caches/org.scalameta.metals/dap-client.trace.json[0m
+[0m2021.09.21 14:02:49 INFO  Starting debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:49 INFO  Trying to attach to remote debuggee VM localhost:50560 .[0m
+[0m2021.09.21 14:02:49 INFO  Attaching to debuggee VM succeeded.[0m
+[0m2021.09.21 14:02:49 WARN  [Warn] The debugger and the debuggee are running in different versions of JVMs. You could see wrong source mapping results.
+Debugger JVM version: 11.0.10
+Debuggee JVM version: 11.0.12[0m
+[0m2021.09.21 14:02:49 INFO  Canceling debug proxy for [com.deamondev.lists.ListProblems][0m
+[0m2021.09.21 14:02:49 INFO  Closing debug server tcp://0.0.0.0:50558[0m

@@ -1,6 +1,7 @@
 package com.deamondev.lists
 
 import scala.annotation.tailrec
+import java.util.Random
 
 sealed abstract class RList[+T] { 
     def head: T 
@@ -21,6 +22,11 @@ sealed abstract class RList[+T] {
     def rle: RList[(T, Int)] 
     def duplcateEach(k: Int): RList[T]
     def rotate(k: Int): RList[T]
+    def sample(k: Int): RList[T]
+
+    //my own functions..
+    def removeFirst(k: Int): RList[T]
+    def removeLast(k: Int): RList[T]
 
 }
 
@@ -52,6 +58,12 @@ case object RNil extends RList[Nothing] {
     override def duplcateEach(k: Int): RList[Nothing] = RNil
 
     override def rotate(k: Int): RList[Nothing] = RNil
+
+    override def removeFirst(k: Int): RList[Nothing] = RNil
+
+    override def removeLast(k: Int): RList[Nothing] = RNil
+
+    override def sample(k: Int): RList[Nothing] = RNil
    
 }
 
@@ -190,8 +202,32 @@ case class ::[+T](override val head: T, override val tail: RList[T]) extends RLi
         duplcateEach0(this, RNil, 0, 1).reverse
     }
 
-    override def rotate(k: Int): RList[T] = {
-        
+    override def removeFirst(k: Int): RList[T] = { 
+        val len = this.length
+
+        @tailrec
+        def removeFirst0(newList: RList[T], currentIndex: Int): RList[T] = { 
+            if (currentIndex == k - 1) newList.tail
+            else removeFirst0(newList.tail, currentIndex + 1)
+        }
+
+        removeFirst0(this, 0)
+    }
+
+    override def removeLast(k: Int): RList[T] = this.reverse.removeFirst(k).reverse
+
+    override def rotate(k: Int): RList[T] = this.removeFirst(k) ++ this.removeLast(this.length - k)
+
+    override def sample(k: Int): RList[T] = { 
+        val rand = new Random()
+        val len = this.length
+
+        def sample0(newList: RList[T], currentIndex: Int): RList[T] = { 
+            if (currentIndex == k) apply(rand.nextInt(len)) :: newList
+            else sample0(apply(rand.nextInt(len)) :: newList, currentIndex + 1)
+        }
+
+        sample0(RNil, 1)
     }
 
 }
@@ -200,7 +236,7 @@ object ListProblems extends App {
     val aSmallList = 1 :: 2 :: 3 :: 4 :: 5 :: 17 :: RNil
     val aConsList = 1 :: 1 :: 1 :: 1 :: 2 :: 2 :: 3 :: 4 :: 4 :: 4 :: 5 :: 5 :: 5 :: 10:: RNil
     val anotherSmallList = 18 :: 19 :: 20 :: RNil
-    val simpleList = 1 :: 2 :: 3 :: RNil
+    val simpleList = 1 :: 2 :: 3 :: 4 :: 5 :: 6 :: 7 :: 8 :: 9 :: 10 :: RNil
 
     // println(aSmallList ++ anotherSmallList)
     // println(aSmallList)
@@ -211,5 +247,8 @@ object ListProblems extends App {
     //println((1 :: 2 :: RNil).removeAt(0))
     //println((1 :: 2 :: RNil).removeAt(0))
     //println(aConsList.rle)
-    println(simpleList.duplcateEach(5))
+    //println(simpleList.duplcateEach(5))
+    //println(simpleList.removeLast(3))
+    //println(simpleList.rotate(3))
+    println(simpleList.sample(3))
 }
